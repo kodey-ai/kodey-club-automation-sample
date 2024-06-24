@@ -19,38 +19,40 @@ In this sample, we will explore how Kodey.ai can read external api documentation
 
 ### SAMPLE PROMPT - EPIC FHIR AllergyIntolerance.Search(R4) API Sample
 ```
-    platform: github | bitbucket | azure | gitlab (choose one of yours)
+      platform: github | bitbucket | azure | gitlab (choose one of yours)
 
-    repository to work on: kodey-clubautomation-sample
+      repository to work on: kodey-club-automation-sample
 
-    branch name to create: feature/kodey-clubautomation-sample-v3
+      branch name to create: feature/kodey-club-automation-sample-v1
 
-    programming language to use: python
+      programming language to use: python
 
-    Information to agent: Do as the steps below are defined one by one. You are working in <platform> repo so make sure to use tools related to <platform> repo.
-    NOTE: You should write the actual implementation of code not just comments.  If you need to use credentials , read the credentials from env variables.
+      Information to agent: Do as the steps below are defined one by one. You are working in <platform>repo so make sure to use tools related to <platform> repo.
+      NOTE: You should write the actual implementation of code not just comments.  If you need to use credentials , read the credentials from env variables.
 
-    Steps:
+      Steps:
 
-    step 1: Create a new branch with name <branch name to create> and then do the steps below.
+      step 1: Create a new branch with name <branch name to create> and then do the steps below.
 
-    step 2: Using webcrawler tool, understand how to make an authentication to Daxko Api https://docs.partners.daxko.com/tutorials/authentication
+      step 2: Using webcrawler tool, understand how to make an authentication to Daxko Api https://docs.partners.daxko.com/tutorials/authentication
 
-    step 3: Create a new file utils.py where the authentication for oauth of Daxko api from step 2 should be implemented.
+      step 3: Create a new file daxko/utils.py where the authentication for oauth of Daxko api from step 2 should be implemented.
 
-    step 4: Using webcrawler tool, understand how to make request to an endpoint which gives member packages from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/#tag/Members/operation/get-user-packages and create a new file to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3. 
+      step 4: Using webcrawler tool, understand how to make request to an endpoint which gives member packages from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/#tag/Members/operation/get-user-packages and create a new file inside daxko directory to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3. 
 
-    step 4: Using webcrawler tool, understand how to make request to an endpoint which gives member profile from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/#tag/Members/operation/get-user-profile and create a new file to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3.
+      step 5: Using webcrawler tool, understand how to make request to an endpoint which gives member profile from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/#tag/Members/operation/get-user-profile and create a new file inside daxko to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3.
 
-    step 5: Create a new main.py file which will allow us to call the methods and functions created above. FYI: Read the credentials from env variables.
+      step 6: Create a new main.py file in home directory which will allow us to call the methods and functions created above. FYI: Read the credentials from env variables.
 
-    step 7: Also create .gitignore file which will include the env files and others.
+      step 7: Also create .gitignore file in home directory which will include the env files and others.
 
-    step 7: Update the readme file to include the detail about the app and also instruction on how to run the app.
+      step 8: Also create requirements.txt file in home directory which will include the packaged and library used in above codes.
 
-    step 8: Create a new pull request from the above created branch with title "KODEY CLUB AUTOMATION SAMPLE V3" and body "club automation documentation reading and scripting".
+      step 9: Update the readme file in in home directory to include the detail about the app and also instruction on how to run the app.
 
-    step 9: Update this issue to closed/done status
+      step 10: Create a new pull request from the above created branch with title "KODEY CLUB AUTOMATION SAMPLE V1" and body "club automation documentation reading and scripting".
+
+      step 11: Update this issue to closed status
 ```
 
 ## Once you have set the description of the issue in your relavant system. You need to use kodey UI Chat and execute below statement to get the work done. 
