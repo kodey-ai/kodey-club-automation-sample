@@ -17,7 +17,7 @@ In this sample, we will explore how Kodey.ai can read external api documentation
 6. Execute the below prompt in the Kodey.ai chat UI
 7. Validate the commits and pull requests in your cloud git provider
 
-### SAMPLE PROMPT - EPIC FHIR AllergyIntolerance.Search(R4) API Sample
+### SAMPLE PROMPT - Club Automation Sample
 ```
       platform: github | bitbucket | azure | gitlab (choose one of yours)
 
@@ -28,7 +28,7 @@ In this sample, we will explore how Kodey.ai can read external api documentation
       programming language to use: python
 
       Information to agent: Do as the steps below are defined one by one. You are working in <platform>repo so make sure to use tools related to <platform> repo.
-      NOTE: You should write the actual implementation of code not just comments.  If you need to use credentials , read the credentials from env variables.
+      NOTE: You should write the actual implementation of code not just comments. If you need to use credentials , read the credentials from env variables.
 
       Steps:
 
@@ -38,9 +38,9 @@ In this sample, we will explore how Kodey.ai can read external api documentation
 
       step 3: Create a new file daxko/utils.py where the authentication for oauth of Daxko api from step 2 should be implemented.
 
-      step 4: Using webcrawler tool, understand how to make request to an endpoint which gives member packages from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/#tag/Members/operation/get-user-packages and create a new file inside daxko directory to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3. 
+      step 4: using webcrawler tool, understand how to request to the endpoint which gets data about members packages from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/ and create a new file inside daxko directory to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3.
 
-      step 5: Using webcrawler tool, understand how to make request to an endpoint which gives member profile from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/#tag/Members/operation/get-user-profile and create a new file inside daxko to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3.
+      step 5: Using webcrawler tool, understand how to make request to an endpoint which gives member profile from url https://docs.partners.daxko.com/openapi/ClubAutomation/v1/ and create a new file inside daxko to implement that request in python. FYI: Remember to use the authentication token retrieved from step 3.
 
       step 6: Create a new main.py file in home directory which will allow us to call the methods and functions created above. FYI: Read the credentials from env variables.
 
