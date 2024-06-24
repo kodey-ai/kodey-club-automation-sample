@@ -21,6 +21,8 @@ In this sample, we will explore how Kodey.ai can read external api documentation
 ```
       platform: github | bitbucket | azure | gitlab (choose one of yours)
 
+      project-to-work-on: kodey-club-automation-sample (ONLY IF AZURE)
+
       repository to work on: kodey-club-automation-sample
 
       branch name to create: feature/kodey-club-automation-sample-v1
